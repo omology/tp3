@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  meta tags :  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cv</title>
+
+  <!-- import taiilwindcss :  -->
+  <script src="https://cdn.tailwindcss.com"></script> 
+
+  <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+<div class="container mx-auto">
+<!-- nav -->
+<nav class=" border-gray-200 dark:bg-gray-900">
+  <!-- logo section :  -->
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4" id="top">
+    <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">OMAR</span>
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <!-- list : -->
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#home" onclick="goToHomeSection()" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#about" onclick="goToAboutSection()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+        </li>
+        <li>
+          <a href="#skills" onclick="goToProjectSection()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">skills</a>
+        </li>
+        <li>
+          <a href="#certif" onclick="goToCertifSection()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">certif</a>
+        </li>
+        <li>
+          <a href="#contact" onclick="goToContactSection()" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+        <li>
+
+          <button id="theme-toggle" type="button" name="theme-toggle" class="top-3 right-6 absolute float-right rounded-full bg-gray-300 border dark:bg-neutral-700 dark:border-purplemain border-purple-600 md:border-transparent md:rounded-lg md:dark:border-transparent md:dark:bg-transparent text-gray-500 md:bg-transparent hover:text-purplemain hover:bg-gray-200  dark:hover:bg-gray-700 dark:hover:text-purplemain transition-all duration-500 text-sm p-2">
+            <svg id="theme-toggle-dark-icon" class="w-6 h-6 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+        </button>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>   
+</div>
+
+  <!-- particles.js container  -->
+  <div id="particles-js"></div>
+  <div class="relative z-50 w-full h-full" >
+    <div class="mx-10">
+      <div class="flex flex-row-reverse md:flex-row w-auto mx-5 my-5 md:justify-center md:my-20 md:mx-32">
+        <div class="flex flex-row items-center">
+          
+          <!-- Text: -->
+          <div class="typewriter items-center">
+            <h1 class="text-3xl text-sky-400 mb-3 capitalize">Omar ait ali</h1>
+            <h2 class="text-xl text-zinc-200">I'm a Cs student</h2>
+          </div>
+          
+          <!-- Image: -->
+          <div class="ml-1">
+            <img src="./img/img1.svg" class="image-icon w-full h-60 max-w-64 hover:scale-105 duration-300" draggable="false"/>
+          </div>
+        </div>
+      </div>
+      
+      <!-- quot: -->
+      <div class="flex justify-center">
+        <div class="text-left h-fit text-zinc-200 md:text-lg rounded-r-lg shadow bg-neutral-600/[0.8] border-l-4 border-s-sky-500 px-4 my-20 w-fit h-14 dark:text-white dark:bg-neutral-700 flex items-center justify-center">
+          <svg id="MyRect" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+            <defs>
+              <style>
+                #MyRect {
+                  stroke: black;
+                  fill: rgb(180, 175, 175);
+                  paint-order: stroke;
+                }
+              </style>
+            </defs>
+            <path d="M580-500h160v-160H580v160Zm-360 0h160v-160H220v160Zm406 220 80-160H520v-280h280v288l-76 152h-98Zm-360 0 80-160H160v-280h280v288l-76 152h-98Zm34-300Zm360 0Z"></path>
+          </svg>
+          <span>
+            Good position can't win game, Good move do ~Bobby fischer 
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--  about :  -->
+      <div class="sm:max-md:mt-20"></div>
+    <div class=" sm:flex items-center w-full h-full" id="about">
+      <div class="sm:w-1/2 p-10">
+          <div class="image object-center text-center">
+              <img src="./img/about.jpeg" draggable="false">
+          </div>
+      </div>
+      <!-- text  -->
+      <div class="sm:w-1/2 p-5">
+          <div class="text">
+              <span class="text-gray-500 border-b-2 border-sky-600 uppercase">About</span>
+              <h2 class="my-4 font-bold text-3xl  sm:text-4xl ">About <span class="text-sky-500">Me</span>
+              </h2>
+              <p class="text-gray-700">
+                  "I'm OMAR AIT ALI, a final year Computer Science student in the Faculty polydisciplinary of OUARZAZAT.
+              <p class="text-gray-700">I am passionate about reverse engineering and chess, and I'm always eager to explore new challenges in both fields.</p>
+
+              </p>
+          </div>
+      </div>
+  </div>
+  <!-- Skills : -->
+  <div class="container  mx-auto sm:mx-auto my-10" id="skills">
+    <h2 
+    class="text-4xl text-center text-bold text-slate-800 
+    mb-8 dark:text-zinc-200 my-4 font-bold text-3xl  sm:text-4xl" id="hat">Skills</h2>
+    <div class="grid grid-cols-1 sm:px-5 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 gap-4">
+      <!-- title  section :  -->
+      <!-- Shopping Card -->
+      <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="https://img.icons8.com/fluency/452/tailwind_css.png" alt="circuit electric" class="w-full h-50 p-4 about-image" object-cover draggable="false">
+        <div class="p-4">
+          <h2 class="text-xl text-slate-700 font-bold dark:text-zinc-200">Tailwindcss</h2>
+          <p class="text-gray-500 px-5 font-semibold">Tailwind CSS is a CSS framework that helps developers in the rapid designing of the web.</p>
+          <a href="https://tailwindcss.com/" target="_blank" class="text-sky-600 hover:underline ">learn more </a>
+
+        </div>
+      </div>
+      <!-- another project  : -->
+       <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="https://logospng.org/download/laravel/logo-laravel-1024.png" alt="circuit electric" class="w-full h-50 p-4" object-cover draggable="false">
+        <div class="p-4">
+          <h2 class="text-xl text-slate-700 font-bold dark:text-zinc-200">LARAVEL</h2>
+          <p class="text-gray-500 font-semibold px-5">Laravel is an open source PHP web framework that provides a complete ecosystem for web development. </p>
+          <a href="https://laravel.com/" target="_blank" class="text-sky-600 hover:underline ">learn more </a>
+
+        </div>
+      </div>
+        <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="https://brandslogos.com/wp-content/uploads/images/large/php-logo-1.png" alt="circuit electric" class="w-full h-50 p-4" object-cover draggable="false">
+        <div class="p-4">
+          <h2 class="text-xl text-slate-700 font-bold dark:text-zinc-200">PHP</h2>
+          <p class="text-gray-500 px-5 font-semibold">PHP is a server-side scripting language that can generate dynamic web pages, interact with databases...</p>
+          <a href="https://https://php.net/" target="_blank" class="text-sky-600 hover:underline ">learn more </a>
+
+
+        </div>
+      </div>
+              <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.mg5JilPdapwOWreX5o1B_wHaHa%26pid%3DApi&f=1&ipt=71031afcabaebb8c401c1b21484295cd69ca270d918d5cb9777c47414feb4ab0&ipo=images" alt="circuit electric" class="w-full h-50 p-4" object-cover draggable="false">
+        <div class="p-4">
+          <h2 class="text-xl text-slate-700 font-bold dark:text-zinc-200">JavaScript</h2>
+          <p class="text-gray-500 px-5 font-semibold">JavaScript is a programming language for the web that is widely used to make websites interactive.</p>
+          <a href="https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Scripting/What_is_JavaScript" target="_blank" class="text-sky-600 hover:underline ">learn more </a>
+
+
+        </div>
+      </div>
+      <!-- maria db :  -->
+                    <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="circuit electric" class="w-full h-60 p-4" object-cover draggable="false">
+        <div class="p-4">
+          <h2 class="text-xl text-slate-700 font-bold dark:text-zinc-200">MySql</h2>
+          <p class="text-gray-500 px-5 font-semibold">MySQL is a popular and versatile database system that uses SQL to store and manage data.</p>
+          <a href="https://oracle.com" target="_blank" class="text-sky-600 hover:underline ">learn more </a>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- certif :  -->
+  <div class="container  mx-auto sm:mx-auto my-10 h-full" id="certif">
+    <h2 
+    class="text-4xl text-center text-bold text-slate-800 
+    mb-8 dark:text-zinc-200 my-4 font-bold text-3xl  sm:text-4xl " >Certificate & Projects </h2>
+    <div class="grid grid-cols-1 sm:px-5 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- title  section :  -->
+      <!-- certif Card -->
+      <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="./certif/oop.png" alt="circuit electric" class="w-full h-50 p-4 about-image" object-cover draggable="false">
+      </div>
+      <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="./certif/lrvl.jpg" alt="circuit electric" class="w-full h-50 p-4 about-image" object-cover draggable="false">
+      </div>
+       <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="./certif/java.jpg" alt="circuit electric" class="w-full h-50 p-4 about-image" object-cover draggable="false">
+      </div>
+      <div class="dark:bg-gray-900 shadow-lg border-2 dark:border-0  rounded-lg overflow-hidden shadow-lg shadow-gray-600/20 dark:shadow-blue-300/20 hover:scale-105 transition duration-300">
+        <img src="./certif/prj1.jpg" alt="circuit electric" class="w-full h-50 p-4 about-image" object-cover draggable="false">
+        <p class="text-gray-700 text-center  font-semibold mb-2"> managment system for clinic (PFE)</p>
+        <p class="text-gray-700 font-sm px-5"> using laravel 11 and tailwindcss ...</p>
+        <a href="https://oracle.com" target="_blank" class="text-sky-600 hover:underline px-5 mb-5 ">learn more </a>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+<!-- ./certif -->
+
+  <!-- contact :  -->
+  <div class="mt-10" id="contact">
+    <div id="contact" class="sm:flex items-center w-full h-full">
+      <!-- text  : -->
+      <div class="sm:w-1/2 p-5 ml-14">
+          <h1 class=" font-bold text-3xl  sm:text-4xl ">Let's Talk</h1>
+          <p class="text-sm text-zinc-700 dark:text-zinc-400 mt-4">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
+  
+          <div class="mt-12">
+              <h2 class="text-gray-700 dark:text-zinc-200 text-base font-bold">Email</h2>
+              <ul class="mt-4">
+                  <li class="flex items-center">
+                      <div class="dark:bg-zinc-700 border dark:border-none h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#06a8ff'
+                              viewBox="0 0 479.058 479.058">
+                              <path
+                                  d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                                  data-original="#000000" />
+                          </svg>
+                      </div>
+                      <a href="mailto:omaraitali83@gmail.com" class="text-sky-500 text-sm ml-4">
+                          <small class="block">Mail</small>
+                          <strong>omaraitali83@gmail.com</strong>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          
+  
+          <div class="mt-12">
+              <h2 class="text-gray-700 dark:text-zinc-200 text-base font-bold">Socials</h2>
+  
+              <ul class="flex mt-4 space-x-4">
+                <!-- linkedIn -->
+                  <li class="dark:bg-zinc-700 border dark:border-none h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                      <!-- linkedin :  -->
+                      <a href="https://www.linkedin.com/in/omar-ait-ali-473ba72a3/">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#06a8ff'
+                              viewBox="0 0 511 512">
+                              <path
+                                  d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"
+                                  data-original="#000000" />
+                          </svg>
+                      </a>
+                  </li>
+                  <li class="dark:bg-zinc-700 border dark:border-none  h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                      <!-- instagram :  -->
+                      <a href="https://github.com/omology/omology" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="20px" height="20px" fill='#06a8ff'><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--> 
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!-- contact img :  -->
+      <div class="sm:w-1/2 p-10">
+        <div class="image object-center text-center">
+            <img src="./img/contact.png" draggable="false">
+        </div>
+    </div>
+  </div>
+  </div>
+  <!-- floating button  -->
+  <div  class="fixed bottom-0 right-0 p-4">
+    <a  href="#"id="toTopbutton" class="bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center" onclick="backToTop()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </a>
+  </div>  
+<!-- footer :  -->
+ 
+
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="" class="hover:underline">OMAR AIT ALI</a>. All Rights Reserved.
+  </span>
+  </div>
+</footer>
+ <!-- ./footer  -->
+  
+   <!-- background animation script :  -->
+      <!-- particles.js lib - https://github.com/VincentGarreau/particlejs--> 
+      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <script>
+    particlesJS("particles-js", {"particles":{"number":{"value":125,"density":{"enable":true,"value_area":800}},"color":{"value":"#9b9b9b"},"shape":{"type":"polygon","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.42613972648142723,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+   </script>
+   <script src="./src/script.js"/>
+</body>
+</html>
