@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="container">
+    <!-- first table !  -->
+
+    <table class="table-fpo">
+        <tr>
+         <td> Département Informatique <br> Filière : SMI </td>
+         <th><img src="./img/fpo.png" width="500"  height="100"> </th>
+<td>Année Universitaire : 2024/2025<br>
+    SEMESTRE 06 </td>
+                </tr>
+            </table>
+
+            <hr>
+    
+    <form class="formulaire">
+        <h2 class="title">formulaire de contact </h2> 
+
+        <label for="email" class="form-label">email:</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="entrez votre adress email">
+        <label for="prof"  class="form-label"> selectioner un prof </label>
+        <select name="prof" id="prof" class="form-input">
+            <option value="omari">P.KAMAL OMARI</option>
+            <option value="bouain">P.Abdelhadi bouain</option>
+            <option value="BENADDY">P.Mohamed BENADDY</option>
+            <option value="Mouatism">P.Abdelkarim Mouatism</option>
+            <option value="Oudaani">P.Jaouad Oudaani</option>
+
+        </select>
+        <label for="sujet"  class="form-label">Sujet</label>
+        <textarea name="sujet" id="sujet" rows="15" cols="50" class="form-input" placeholder="sujet de contact"></textarea>
+        <div class="form-btn">
+            <button type="submit" class="btn btn-env"> envoyer</button>
+            <button type="button" class="btn btn-ann"> annuler</button>
+        </div>
+
+        
+
+    </form>
+
+    </body>
+    </html>
